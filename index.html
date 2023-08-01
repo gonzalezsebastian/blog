@@ -4,10 +4,87 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Blog Front</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="FCB" style="height: 100px;">
+      </div>
+      <div class="encabezado">
+        <div class="titulo">
+          <h2>Blog: Curso Frontend 202330</h2>
+        </div>
+        <div class="clase">
+          <h3>Stylus</h3>
+        </div>
+        <div class="fuente">
+          <p class="xs">A</p>
+          <p class="m">A</p>
+          <p class="xl">A</p>
+        </div>
+      </div>
+      <div class="avatar-publicar">
+        <div class="btn">
+          <p class="publicar"><span class="ico"></span>Publicar</p>
+        </div>
+        <div class="avatar">
+          <div class="img-avatar">
+            <img src="" alt="">
+          </div>
+          <div class="menu">
+            <p><span class="ico">*</span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul class="lista">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Jugadores</a></li>
+        <li><a href="#">Calendario</a></li>
+        <li><a href="#">Pálmares</a></li>
+        <li><a href="#">Tienda</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <div class="contenido">
+          <div class="portada">
+            <img src="08-PEDRI.png" alt="Golden Boy" style="height: 200px;">
+          </div>
+          <div class="informacion">
+            <div class="titulo">
+              <h3>Titulo</h3>
+            </div>
+            <div class="autor">
+              <p>Parrafo</p>
+            </div>
+            <div class="tag-tiempo">
+              <div class="tag">
+                <p>CSS3</p>
+              </div>
+              <div class="tiempo">
+                <p>Hace 10 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="puntuacion">
+          <div class="ranking">
+            <p><span class="up">*</span>10 <span class="down">*</span></p>
+          </div>
+          <div class="calificacion">
+            <p>10 <span>*</span></p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <div ckass="text-footer">
+        <p>Powered by Joan Laporta <span>mejorando.la 2023</span></p>
+      </div>
+    </footer>
   </body>
 </html>
