@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    background: #444444;
+    justify-content: space-between;
+}
+
+header div .logo img{
+    height: 100px;
+}
+
+header div:first-child {
+    display: flex;
+}
+
+header div .encabezado .titulo,
+header div .encabezado .clase,
+header div .encabezado .fuente{
+    color:white;
+}
+
+header .avatar-publicar, header .avatar-publicar .avatar{
+    display: flex;
+}
+
+header .avatar-publicar .avatar .img-avatar img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.fuente{
+    display: flex;
+    align-items: first baseline;
+}
+
+.fuente .xs{
+    font-size: 1rem;
+}
+
+.fuente .m{
+    font-size: 1.5rem;
+}
+
+.fuente .xl{
+    font-size: 2rem;
+}
+
+nav{
+    background-color: blue;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellow;
+    list-style-type: none;
+}
