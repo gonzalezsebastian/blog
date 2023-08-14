@@ -27,30 +27,86 @@ header .avatar-publicar .avatar .img-avatar img{
     border-radius: 50%;
 }
 
-.fuente{
+header .fuente{
     display: flex;
     align-items: first baseline;
 }
 
-.fuente .xs{
+header .fuente .xs{
     font-size: 1rem;
 }
 
-.fuente .m{
+header .fuente .m{
     font-size: 1.5rem;
 }
 
-.fuente .xl{
+header .fuente .xl{
     font-size: 2rem;
 }
 
-nav{
-    background-color: blue;
+nav .lista{
+    background-color: yellow;
+    display: flex;
 }
 
-.lista{
+nav .lista li{
+    padding: 10px;
+}
+
+section article .contenido, section article .puntuacion{
+    width: 50%;
+}
+
+section article .contenido{
+    background-color: coral;
     display: flex;
-    justify-content: space-evenly;
-    background-color: yellow;
-    list-style-type: none;
+    border-radius: 0 5px;
+    box-shadow: 0 1px 5px 0 black;
+    border-bottom: aqua 5px solid;
+}
+
+section article .contenido .informacion{
+    width: 100%;
+    padding: 10px;
+}
+
+section article .contenido .informacion .titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0 10px;
+}
+
+section article .contenido .informacion .autor{
+    font-size: 1rem;
+    padding: 0 0 20px;
+}
+
+section article .contenido .informacion .tag-tiempo{
+    display: flex;
+    justify-content: space-between;
+}
+
+section article .contenido .informacion .tag{
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+section article .contenido .informacion .tiempo{
+    padding: 5px;
+}
+
+section article .puntuacion{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: cadetblue;
+    border-radius: 0 0 5px 0;
+    box-shadow: 0 1px 5px 0 black;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: brown;
 }
