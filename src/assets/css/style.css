@@ -1,112 +1,94 @@
-header{
-    display: flex;
-    background: #444444;
-    justify-content: space-between;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-header div .logo img{
-    height: 100px;
+html header {
+  background: #444;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
 }
-
-header div:first-child {
-    display: flex;
+html header div:first-child {
+  display: flex;
 }
-
-header div .encabezado .titulo,
-header div .encabezado .clase,
-header div .encabezado .fuente{
-    color:white;
+html header div .logo {
+  padding: 0 35px;
+  border-right: 2px solid #22bce0;
+  margin: 10px 0;
 }
-
-header .avatar-publicar, header .avatar-publicar .avatar{
-    display: flex;
+html header div .logo img {
+  height: 100px;
 }
-
-header .avatar-publicar .avatar .img-avatar img{
-    height: 50px;
-    border-radius: 50%;
+html header div .encabezado {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-header .fuente{
-    display: flex;
-    align-items: first baseline;
+html header div .encabezado .titulo,
+html header div .encabezado .clase,
+html header div .encabezado .fuente {
+  color: #fff;
 }
-
-header .fuente .xs{
-    font-size: 1rem;
+html header div .encabezado .titulo h2 {
+  font-size: 18px;
 }
-
-header .fuente .m{
-    font-size: 1.5rem;
+html header div .encabezado .clase {
+  margin-top: 5px;
 }
-
-header .fuente .xl{
-    font-size: 2rem;
+html header div .encabezado .clase h3 {
+  font-size: 14px;
+  font-style: italic;
+  color: #22bce0;
+  font-weight: bold;
 }
-
-nav .lista{
-    background-color: yellow;
-    display: flex;
+html header div .encabezado .fuente {
+  display: flex;
+  margin-top: 5px;
+  align-items: first baseline;
 }
-
-nav .lista li{
-    padding: 10px;
+html header div .encabezado .fuente p {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #dd4f24;
 }
-
-section article .contenido, section article .puntuacion{
-    width: 50%;
+html header div .encabezado .fuente p:first-child {
+  font-size: 12px;
 }
-
-section article .contenido{
-    background-color: coral;
-    display: flex;
-    border-radius: 0 5px;
-    box-shadow: 0 1px 5px 0 black;
-    border-bottom: aqua 5px solid;
+html header div .encabezado .fuente p:last-child {
+  font-size: 20px;
 }
-
-section article .contenido .informacion{
-    width: 100%;
-    padding: 10px;
+html header .avatar-publicar {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
-
-section article .contenido .informacion .titulo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0 0 10px;
+html header .avatar-publicar .avatar {
+  display: flex;
+  align-items: center;
 }
-
-section article .contenido .informacion .autor{
-    font-size: 1rem;
-    padding: 0 0 20px;
+html header .avatar-publicar .avatar .img-avatar {
+  margin-right: -5px;
+  z-index: 1;
 }
-
-section article .contenido .informacion .tag-tiempo{
-    display: flex;
-    justify-content: space-between;
+html header .avatar-publicar .avatar .img-avatar img {
+  height: 50px;
+  border-radius: 50%;
 }
-
-section article .contenido .informacion .tag{
-    background-color: aqua;
-    border-radius: 5px;
-    padding: 5px;
+html header .avatar-publicar .avatar .menu {
+  background: #dd4f24;
+  height: fit-content;
+  padding: 5px 5px 5px 10px;
 }
-
-section article .contenido .informacion .tiempo{
-    padding: 5px;
+html header .avatar-publicar .avatar .menu p {
+  color: #fff;
 }
-
-section article .puntuacion{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    background-color: cadetblue;
-    border-radius: 0 0 5px 0;
-    box-shadow: 0 1px 5px 0 black;
+html header .avatar-publicar .btn {
+  background: #dd4f24;
+  padding: 5px 30px;
+  margin-right: -5px;
 }
-
-footer{
-    margin-top: 20px;
-    padding: 10px;
-    background-color: brown;
+html header .avatar-publicar .btn p {
+  color: #fff;
+  font-style: italic;
 }
