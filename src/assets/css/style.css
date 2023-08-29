@@ -1,6 +1,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 html header {
   background: #444;
   display: flex;
@@ -91,4 +92,74 @@ html header .avatar-publicar .btn {
 html header .avatar-publicar .btn p {
   color: #fff;
   font-style: italic;
+}
+
+html nav {
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+html nav::before{
+  border-bottom: 20px solid transparent;
+  border-left: 7px solid #fff;
+  border-top: 20px solid transparent;
+  content: "";
+  left:0;
+  position: absolute;
+}
+html nav ul {
+  display: flex;
+  background-color: #22bce0;
+  padding: 15px 0;
+}
+html nav ul li {
+  margin-right: 35px;
+  margin-left: 15px;
+}
+html nav ul li:hover {
+  background: rgba(0,0,0,0.2);
+}
+html nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+html section article {
+  width: 45%;
+  border-radius: 0 0 16px 16px;
+  margin: 10px 0;
+  box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+}
+
+html section article .contenido {
+  border-bottom: 2px solid #22bce0;
+  display: flex;
+}
+
+html section article .puntuacion {
+  display: flex;
+  justify-content: space-between;
+}
+
+html footer {
+  background: #dd4f24;
+  padding: 40px 0;
+}
+html footer div {
+  display: flex;
+  justify-content: center;
+}
+html footer div p {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-weight: bold
+}
+html footer div p span {
+  font-weight: normal;
+}
+html footer div p span::before, html footer div p span::after {
+  content: " - ";
 }
