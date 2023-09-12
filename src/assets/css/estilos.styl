@@ -1,4 +1,4 @@
-@font-face {
+@font-face
   font-family: 'icons';
   src:  url('../fonts/icons/icomoon.eot?5khljo');
   src:  url('../fonts/icons/icomoon.eot?5khljo#iefix') format('embedded-opentype'),
@@ -8,10 +8,11 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-}
 
 html
     font-family: Arial, Helvetica, sans-serif
+    body
+        background: #e8e8e8
     header
         background: #444
         display: flex
@@ -75,20 +76,27 @@ html
                     padding: 5px 5px 5px 10px
                     p
                         color: #fff
-                        transform: rotate(90deg)
-                        span::before
+                        span::after
                             font-family: 'icons'
                             content: "\ea1c"
+                            display: inline-block
+                            transform: rotate(90deg)
             .btn
                 background: #dd4f24
-                padding: 5px 30px
+                padding: 10px 35px 10px 65px
                 margin-right: -5px
                 p
                     color: #fff
                     font-style: italic
-                    span::before
+                    position: relative
+                    span
+                        position: absolute
+                        left: -55px
+                        top: -15px
+                    :before
                         font-family: 'icons'
                         content: "\e908"
+                        font-size: 25px
     nav
         box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
         :before
@@ -113,39 +121,77 @@ html
                     font-weight: bold
                     text-decoration: none
     section
+        display: flex
+        flex-wrap: wrap
         article
-            width: 45%;
+            background: white
+            margin: 10px auto;
             border-radius: 0 0 16px 16px;
-            margin: 10px 0;
+            flex-basis: 45%
             box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
             .contenido
                 border-bottom: 2px solid #22bce0
                 display: flex
+                .portada
+                    img
+                        height: 200px
+                .informacion
+                    margin: 0 15px
+                    flex-grow: 1
+                    .titulo
+                        font-weight: bold
+                        font-size: 18px
+                        font-style: italic
+                        margin-top: 10px
+                    .autor
+                            margin-top: 5px
+                        span
+                            color: #dd4f24
+                            text-decoration: underline
+                    .tag-tiempo
+                        display: flex
+                        justify-content: space-between
+                        margin-top: 10px
+                        .tag
+                            p
+                                background-color: #22bce0
+                                padding: 5px 10px
+                                color: white
+                                border-radius: 16px
+                        .tiempo
+                            p
+                                font-weight: bold
             .puntuacion
                 display: flex
                 justify-content: space-between
+                align-items: center
+                padding: 10px 0
+                margin: 0 15px
                 .ranking
                     p
-                        margin: 10px
-                        span 
-                            .up
-                                transform: rotate(90deg)
-                        span.up::before
+                        .up::before
+                            font-family: 'icons'
+                            content: "\ea1c"
                             color: green
+                            display: inline-block
+                            transform: rotate(-90deg)
+                        .down::before
                             font-family: 'icons'
                             content: "\ea1c"
-                        span.down::before
                             color: red
-                            font-family: 'icons'
-                            content: "\ea1c"
+                            display: inline-block
+                            transform: rotate(90deg)
                 .calificacion
                     p
-                        margin: 10px
-                        color: #fff
-                        background: #303030
-                        border-radius: 5px
-                        span::before
-                            color: yellow
+                        .puntaje
+                            background-color: #444444
+                            padding: 3px 5px
+                            border-radius: 2px
+                            color: white
+                        .ico
+                            margin-left: 10px
+                        .ico::before
+                            color: #fcb92d
                             font-family: 'icons'
                             content: "\e9d8"
     footer

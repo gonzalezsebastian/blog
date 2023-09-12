@@ -9,6 +9,9 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+html body {
+  background: #e8e8e8;
+}
 html header {
   background: #444;
   display: flex;
@@ -91,24 +94,32 @@ html header .avatar-publicar .avatar .menu {
 }
 html header .avatar-publicar .avatar .menu p {
   color: #fff;
-  transform: rotate(90deg);
 }
-html header .avatar-publicar .avatar .menu p span::before {
+html header .avatar-publicar .avatar .menu p span::after {
   font-family: 'icons';
   content: "\ea1c";
+  display: inline-block;
+  transform: rotate(90deg);
 }
 html header .avatar-publicar .btn {
   background: #dd4f24;
-  padding: 5px 30px;
+  padding: 10px 35px 10px 65px;
   margin-right: -5px;
 }
 html header .avatar-publicar .btn p {
   color: #fff;
   font-style: italic;
+  position: relative;
 }
-html header .avatar-publicar .btn p span::before {
+html header .avatar-publicar .btn p span {
+  position: absolute;
+  left: -55px;
+  top: -15px;
+}
+html header .avatar-publicar .btn p :before {
   font-family: 'icons';
   content: "\e908";
+  font-size: 25px;
 }
 html nav {
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
@@ -139,44 +150,87 @@ html nav ul li a {
   font-weight: bold;
   text-decoration: none;
 }
+html section {
+  display: flex;
+  flex-wrap: wrap;
+}
 html section article {
-  width: 45%;
+  background: #fff;
+  margin: 10px auto;
   border-radius: 0 0 16px 16px;
-  margin: 10px 0;
+  flex-basis: 45%;
   box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
 }
 html section article .contenido {
   border-bottom: 2px solid #22bce0;
   display: flex;
 }
+html section article .contenido .portada img {
+  height: 200px;
+}
+html section article .contenido .informacion {
+  margin: 0 15px;
+  flex-grow: 1;
+}
+html section article .contenido .informacion .titulo {
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 10px;
+}
+html section article .contenido .informacion .autor {
+  margin-top: 5px;
+}
+html section article .contenido .informacion span {
+  color: #dd4f24;
+  text-decoration: underline;
+}
+html section article .contenido .informacion .tag-tiempo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+html section article .contenido .informacion .tag-tiempo .tag p {
+  background-color: #22bce0;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 16px;
+}
+html section article .contenido .informacion .tag-tiempo .tiempo p {
+  font-weight: bold;
+}
 html section article .puntuacion {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 15px;
 }
-html section article .puntuacion .ranking p {
-  margin: 10px;
+html section article .puntuacion .ranking p .up::before {
+  font-family: 'icons';
+  content: "\ea1c";
+  color: #008000;
+  display: inline-block;
+  transform: rotate(-90deg);
 }
-html section article .puntuacion .ranking p span .up {
+html section article .puntuacion .ranking p .down::before {
+  font-family: 'icons';
+  content: "\ea1c";
+  color: #f00;
+  display: inline-block;
   transform: rotate(90deg);
 }
-html section article .puntuacion .ranking p span.up::before {
-  color: #008000;
-  font-family: 'icons';
-  content: "\ea1c";
-}
-html section article .puntuacion .ranking p span.down::before {
-  color: #f00;
-  font-family: 'icons';
-  content: "\ea1c";
-}
-html section article .puntuacion .calificacion p {
-  margin: 10px;
+html section article .puntuacion .calificacion p .puntaje {
+  background-color: #444;
+  padding: 3px 5px;
+  border-radius: 2px;
   color: #fff;
-  background: #303030;
-  border-radius: 5px;
 }
-html section article .puntuacion .calificacion p span::before {
-  color: #ff0;
+html section article .puntuacion .calificacion p .ico {
+  margin-left: 10px;
+}
+html section article .puntuacion .calificacion p .ico::before {
+  color: #fcb92d;
   font-family: 'icons';
   content: "\e9d8";
 }
