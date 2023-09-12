@@ -132,6 +132,13 @@ html nav :before {
   left: 0;
   position: absolute;
 }
+html nav .lista {
+  height: 40px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
 html nav ul {
   display: flex;
   background-color: #22bce0;
